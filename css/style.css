@@ -1,0 +1,50 @@
+#mainContainer {
+    max-width: 1200px;
+}
+
+#registerContainer {
+    max-width: 500px;
+}
+
+#recordsContainer {
+    max-width: 850px;
+}
+
+#myNav {
+    padding: 0%;
+    /* background-color: #dc3545 !important; */
+    text-align: center;
+  }
+
+#myNav .logo {
+padding-left: 10px;
+padding-right: 10px;
+margin-right: 0%;
+}
+
+#footer {
+    text-align: right;
+}
+
+#btnUpdate {
+    width: 70%;
+    
+}
+
+#btnSubmit {
+    width: 100%;
+}
+
+#btnBack {
+    width: 29%;
+}
+
+#cardDetail{
+   margin-left: 3%;
+   margin-top: 3%;
+}
+
+.btnView {
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}

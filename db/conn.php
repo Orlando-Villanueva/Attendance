@@ -35,7 +35,7 @@
     $crud = new crud($pdo);
     $user = new user($pdo);
 
-    $user->insertUser('admin','addd')
+    $user->insertUser('admin','aaa')
 
 
 ?>

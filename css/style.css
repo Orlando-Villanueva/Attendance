@@ -10,6 +10,10 @@
     max-width: 850px;
 }
 
+#containerLogin {
+    max-width: 420px;
+}
+
 #myNav {
     padding: 0%;
     /* background-color: #dc3545 !important; */
@@ -37,6 +41,10 @@ margin-right: 0%;
 
 #btnBack {
     width: 29%;
+}
+
+#btnConnecter {
+    width: 100%;
 }
 
 #cardDetail{

@@ -1,7 +1,7 @@
             <div id="footer" class="container mt-5">
                 <p>
                     <small>
-                        <?php echo 'Copyright &copy; ' . date("Y") . ' PopcornTV.ca' ?>
+                        <?php echo 'Copyright &copy; ' . date("Y") . ' Orlando Villanueva' ?>
                     </small>
                 </p>
             </div>

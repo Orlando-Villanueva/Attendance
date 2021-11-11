@@ -32,7 +32,12 @@
                 <a id="btnReg" href="viewrecords.php" class="nav-item nav-link">View Attendees</a>
             </div>
             <div class="navbar-nav ms-auto me-3">
-                <a href="login.php" class="nav-item nav-link">Login</a>
+                <?php if(!isset($_SESSION['userid'])) { ?>
+                    <a href="login.php" class="nav-item nav-link">Login</a>
+                <?php } else { ?>
+                    <div class="container pt-2"><span class="text-light">Hello, <?php echo $_SESSION['username']?>!</span></div>
+                    <a href="logout.php" class="nav-item nav-link">Logout</a>
+                <?php }?>
             </div>
         </div>
 

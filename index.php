@@ -6,15 +6,6 @@ require_once 'db/conn.php';
 $results = $crud->getSpecialities();
 ?>
 
-
-<!--
-        - First name
-        - Last Name
-        - Date of Birth (Use DatePicker)
-        - Specialty (Database Admin, SOftware Developer, Web Administrator, Other)
-        - Email Address
-        - Contact Number
-     -->
 <h1 class="text-center">Registration for IT Conference </h1>
 
 <!-- form container  -->

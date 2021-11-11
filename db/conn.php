@@ -2,18 +2,18 @@
 
     // developpment connection
 
-    // $host = 'localhost';
-    // $db = 'attendance_db';
-    // $user = 'root';
-    // $pass = '';
-    // $chartset = 'utf8mb4';
+    $host = 'localhost';
+    $db = 'attendance_db';
+    $user = 'root';
+    $pass = '';
+    $chartset = 'utf8mb4';
 
     // remote database connection
-    $host = 'remotemysql.com';
-    $db = 'HRqqazQPhS';
-    $user = 'HRqqazQPhS';
-    $pass = 'hmdyIg29vE';
-    $chartset = 'utf8mb4';
+    // $host = 'remotemysql.com';
+    // $db = 'HRqqazQPhS';
+    // $user = 'HRqqazQPhS';
+    // $pass = 'hmdyIg29vE';
+    // $chartset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;chartset=$chartset";
 
@@ -31,7 +31,11 @@
 
     // initialize CRUD for database operation functions
     require_once 'crud.php';
+    require_once 'user.php';
     $crud = new crud($pdo);
+    $user = new user($pdo);
+
+    $user->insertUser('admin','addd')
 
 
 ?>

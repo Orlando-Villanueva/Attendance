@@ -49,8 +49,7 @@ $results = $crud->getSpecialities();
         <button id="btnSubmit" type="submit" name="submit" class="btn btn-success bg-gradient">Submit</button>
     </form>
 </div>
-
-
+ 
 
 <?php
 include 'includes/footer.php';

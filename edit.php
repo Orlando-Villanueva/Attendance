@@ -1,6 +1,7 @@
 <?php
 $title = 'Update Attendee';
 include 'includes/header.php';
+require_once 'includes/auth_check.php';
 require_once 'db/conn.php';
 
 $results = $crud->getSpecialities();

@@ -3,7 +3,7 @@ $title = 'User Login';
 include 'includes/header.php';
 require_once 'db/conn.php';
 
-//If data was submitted with a POST request
+//If data was submitted with a POST request // if the page loaded after POST
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $username = strtolower(trim($_POST['username']));
     $password = $_POST['password'];
@@ -22,7 +22,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 <div id="containerLogin" class="container mt-3">
     <h1 class="h1 text-center"><?php echo $title ?></h1>
-
+    <!-- reload this page and do the posting action on this page  -->
     <form method="POST" id="formLogin" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>" class="row mt-1">
         <div class="form-group col-12">
 

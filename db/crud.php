@@ -90,8 +90,24 @@ class crud
     public function getSpecialities()
     {
         try {
-            $sql = "SELECT * FROM `specialties`;";
+            $sql = "SELECT * FROM `specialties`";
             $result = $this->db->query($sql);
+            return $result;
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            return false;
+        }
+
+    }
+
+    public function getSpecialtyById($id)
+    {
+        try {
+            $sql = "SELECT * FROM `specialties` WHERE specialty_id = :id";
+            $stmt = $this->$db->prepare($sql);
+            $stmt->bindparam(':id', $id);
+            $stmt->execute();
+            $result = $stmt->fetch();
             return $result;
         } catch (PDOException $e) {
             echo $e->getMessage();

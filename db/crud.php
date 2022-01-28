@@ -104,7 +104,7 @@ class crud
     {
         try {
             $sql = "SELECT * FROM `specialties` WHERE specialty_id = :id";
-            $stmt = $this->$db->prepare($sql);
+            $stmt = $this->db->prepare($sql);
             $stmt->bindparam(':id', $id);
             $stmt->execute();
             $result = $stmt->fetch();

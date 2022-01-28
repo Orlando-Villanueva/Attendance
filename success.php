@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
     $specialtyName = $crud->getSpecialtyById($specialty);
 
     if ($isSuccess) {
-        SendEmail::SendMail($email, 'Welcome to IT Conference 2022', 'You have successfully registered for this year\'s IT Conference', );
+        SendEmail::SendMail($email, 'Welcome to IT Conference 2022', 'You have successfully registered for this year\'s IT Conference');
         include 'includes/successMessage.php';
     } else {
         include 'includes/error.php';
@@ -36,7 +36,7 @@ if (isset($_POST['submit'])) {
             <?php echo $_POST['firstname'] . ' ' . $_POST['lastname']; ?>
         </h5>
         <h6 class="card-subtitle mb-2 text-muted">
-            <?php echo $specialtyName; ?>
+            <?php echo $specialtyName['name']; ?>
         </h6>
         <p class="card-text">
             Date Of Birth: <?php echo $_POST['dob']; ?>

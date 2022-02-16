@@ -3,7 +3,7 @@
 
     class SendEmail{
         public static function SendMail($to,$subject,$content){
-            $key = "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";
+            $key = "";
 
             $email = new \SendGrid\Mail\Mail();
             $email->setFrom("orlando@gmail.com", "Beef Orlando");

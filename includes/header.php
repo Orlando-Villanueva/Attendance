@@ -23,7 +23,7 @@
     <nav id="myNav" class="topnav navbar navbar-expand-sm navbar-dark bg-primary bg-gradient">
 
         <a class="logo navbar-brand" href="index.php">IT Conference</a>
-        <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <button id="toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span id="toggler" class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">

@@ -19,7 +19,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
 }
 ?>
-
 <div id="containerLogin" class="container mt-3">
     <h1 class="h1 text-center"><?php echo $title ?></h1>
     <!-- reload this page and do the posting action on this page  -->

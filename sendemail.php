@@ -6,7 +6,7 @@
             $key = "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";
 
             $email = new \SendGrid\Mail\Mail();
-            $email->setFrom("orlandovillanueva@gmail.com", "Orlando Villanueva");
+            $email->setFrom("orlando@gmail.com", "Beef Orlando");
             $email->setSubject($subject);
             $email->addTo($to);
             // can be html
